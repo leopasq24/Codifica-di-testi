@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- documento xml da validare -->
+<!-- 
+    file: esercizio-doc-da-validare
+    nome: NOME COGNOME
+    data: DATA
+-->
+
+<!-- corpo del documento XML-->
+<elementoRadice>
+    <elementoFiglio>
+        <elementoAnnidato>
+        </elementoAnnidato>
+    </elementoFiglio>
+    <elementoFiglio>
+        <elementoAnnidato>
+            <elementoFiglio>
+                <!--Aggiungo un sibling a elementoAnnidato-->
+                <elementoFratello>
+                </elementoFratello>
+                <elementoAnnidato>
+                </elementoAnnidato>
+                <!--Errato annidmanento di elementoFiglio e elementoAnndiato-->
+            </elementoFiglio>
+            <!--elementoAnnidato non veniva chiuso ma anzi ne veniva aperto un altro-->    
+        </elementoAnnidato><elementoFiglio><!--aggiungo un figlio--><nuovoelementoFiglio/></elementoFiglio>
+    </elementoFiglio>
+</elementoRadice>
+
+<!-- epilogo -->
