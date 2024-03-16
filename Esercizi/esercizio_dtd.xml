@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- This document contains data on Codifica di
+Testi.
+Filename: esercizio_dtd.xml
+Author: Leonardo Pasquale
+Date: 16/03/24 -->
+<!DOCTYPE TEI SYSTEM "esercizio_dtd.dtd">
+<TEI>
+    <header type="Intestazione" lang="italiano">header</header>
+    <facsimile source="/www.eserciziodtd.com/facsimile.jpg">opzionale</facsimile>
+    <testo id="text1" type="testosemplice">
+        <seg>segmento</seg>
+    </testo>
+</TEI>
+
