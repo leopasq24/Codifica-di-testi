@@ -1,0 +1,325 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+:root {
+	--black: #000000;
+	--bordeaux: #641c1e;
+	--navy: #07003d;
+	--white: #ffffff;
+	--yellow: #FCDC94;
+	--rose: #ffcefb;
+	--mint: #b4ffda;
+	--powder: #b3e7ff;
+	--purple: #B1AFFF;
+	--coral: #ff787a;
+	--crimson: #ff4545;
+	--orange: #ff8e43;
+	--lilac: #DFCCFB;
+	--jade: #2cd3a9;
+	--blue: #78d2f8;
+	--lemon: #F4CE14;
+	--marine: #37b5c0;
+	--vanilla: #b47870;
+	--sand: #ffd092;
+	--applegreen: #66ff80;
+  }
+
+html, body
+{
+	margin: 0;
+}
+
+body{
+	font-family: 'Newsreader', serif;
+    background-color: var(--white);
+    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+}
+
+.header
+{
+	text-align: center;
+	background-color: var(--black);
+    background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+	padding: 1rem;
+	color: var(--white);
+}
+
+body a {
+	color: black;
+}
+
+/* header */
+.header img {
+	min-width: 250px;
+	width: 20%;
+	border-radius: 20px;
+}
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 2rem;
+}
+
+.btns-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	padding: 1rem;
+}
+
+/* body layout */
+.containerSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section {
+    padding: 10px;
+}
+
+.section h2 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.page {
+    display: flex;
+	flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    box-sizing: border-box;
+	align-items: center;
+	justify-content: center;
+}
+
+.facsimile {
+    flex: 1;
+    padding: 10px;
+	text-align: center;
+}
+
+.column {
+    padding: 10px;
+}
+
+table.columns {
+	display: flex;
+}
+
+table.columns td {
+	vertical-align: baseline;
+	min-width: 470px;
+	width: fit-content;
+}
+
+/* text */
+.paragraph {
+    display: flex;
+	flex-direction: row;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.paragraph span {
+    min-width: 90px;
+	padding-top: 8px;
+}
+
+.paragraph strong {
+    font-weight: bold;
+}
+
+.line {
+	padding-bottom: 8px;
+}
+
+/* map */
+
+span.selezionato {
+	background-color: var(--lemon);
+	border-radius: 20px;
+	padding: 10px;
+}
+
+area:hover {
+	cursor: pointer;
+}
+
+/* buttons */
+.menu {
+	background-color: transparent;
+	border-radius: 20px;
+  	box-sizing: border-box;
+	padding: 1rem;
+	position: sticky;
+	top: 0;
+	margin: 10px;
+	color: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.btns-highlight, .btns-show {
+	margin: 5px 1rem;
+	padding: 0 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	border-radius: 20px;
+	box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+}
+
+.btns-highlight {
+	background-color: var(--bordeaux);
+	background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+}
+
+.btns-show {
+	background-color: var(--navy);
+	background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+}
+
+button {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 20px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: var(--black);
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Newsreader', 'Serif';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  margin: 6px 4px;
+}
+
+button:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+button:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+button:active {
+  background-color: white;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+}
+
+button:focus {
+  outline: 1px transparent;
+}
+
+button.active {
+	background-color: white;
+}
+
+button.desc.selected {
+	background-color: var(--lemon);
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 1rem;
+}
+
+.container h3 {
+	margin: 0;
+}
+
+button.desc {
+	font-size: 1.2rem;
+	padding: 12px 20px;
+}
+
+/* tabelle descrizioni */
+.container > .bgTabella {
+	padding: 3%;
+	margin: 2% 5%;
+	border-radius: 20px;
+	background-color: var(--black);
+	background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+  	box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  	box-sizing: border-box;
+}
+
+.container > .bgTabella > .containerTabella
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex: 1;
+	text-align: left;
+	font-size: 1.3rem;
+	background-color: var(--white);
+	border-radius: 20px;
+	padding: 3%;
+}
+
+.containerTabella table{
+	border-collapse: collapse;
+	display: flex;
+	align-items: flex-start;
+}
+
+.containerTabella > table > tbody > tr
+{
+	border-bottom: 1px solid black;
+}
+
+.containerTabella td{
+	padding:10px;
+	vertical-align: baseline;
+}
+
+span.info{
+	position:absolute;
+	background-color: var(--black);
+	background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+	color: var(--white);
+	border-radius: 10px;
+	padding: 20px;
+	margin: 0 5px;
+	width: fit-content;
+	visibility: hidden;
+}
+
+/* footer */
+footer {
+    text-align: center;
+	background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+	padding: 1rem;
+	color: white;
+}
